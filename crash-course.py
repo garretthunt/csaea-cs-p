@@ -69,8 +69,8 @@ print(g)
 s1 = "Goodnight"
 s2 = " and "
 s3 = "Goodbye"
-end = s1 + s2+ s3 # concatenation with +
-end += ", Cowboy."
+end = s1 + s2 + s3 # concatenation with +
+end += ",Cowboy."
 
 print(end + "\n")
 
