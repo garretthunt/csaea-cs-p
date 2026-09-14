@@ -138,3 +138,26 @@ words[1] = "Word 5"
 length = len(words)
 print(words)
 print(length)
+
+# ITERATION
+
+# For Loop
+# A for loop will iterate over a RANGE.
+# A range is a range of numbers. 
+# range(stop), range(start, stop), range(start, stop, step)
+
+for i in range(5):
+    print(i)
+    
+animals = ["Sheep", "Deer", "Moose"]
+print(f"List: {animals}")
+
+for animal in animals:
+    print(f"We saw a (animal)")
+
+nums = [5.1, 2.2, 5.3, 3.4, 8.5]
+
+# Write a for loop to print each value in list nums
+
+for num in nums:
+    print(num)
