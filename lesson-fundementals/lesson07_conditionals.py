@@ -1,0 +1,104 @@
+# CONDITIONALS IN PYTHON
+# comparison operators: ==, !=, <, >, <=, >=
+# logical operators: and, or, not
+# control flow: if, elif, else
+
+# Boolean refresher:
+# always return either True or False
+print(3 == 2)
+print("Hello" == "Hi there")
+print(7 != 4)
+print(4 > 5)
+
+# if 
+num = 12
+if num == 10: # only runs if condition is true
+    print("Your num is equal to 10")
+    print(10 + num)
+
+# if else 
+num = 12
+if num <= 12:
+    print("Your num is less than or equal to 12")
+else:
+    print("Your num is greater than 12")
+
+# if elif else
+temperature = 30
+if temperature > 95:
+    print("It's hot!")
+elif temperature >= 60:
+    print("It's nice")
+else: 
+    print("It's cold!")
+
+
+print()
+
+x = 2
+y = 20
+
+if x == y:
+    print("x is equal to y")
+elif x > y:
+    print("x is greater than y")
+elif x < y:
+    print("x is less than y")
+else:
+      print("Error.")
+    
+
+# Logical operators: and 
+# Both sides of the 'and' must  be true, otherwise it's false. 
+age = 11
+has_permission = True 
+
+if age >= 16 and has_permission: 
+    print("You can drive")
+else:
+    print("You can't drive yet")
+
+# Logical operators: 'or' and 'not'
+
+day = "Sunday"
+
+if day == "Saturday" or day == "Sunday":
+    print("It's the weekend!") 
+else:
+    print("It's the weekday")
+
+print("--- Using 'is' and 'not' --- ")
+
+if day is not "Monday":
+    print("It's not Monday, thankfully")
+
+# Challenge 1: Movie Admission
+# Ask the user for their age. 
+# If under 13, “You can watch PG or G movies.”
+# If 13–17, “You can watch PG-13 movies.”
+# If 18+, “You can watch any movie.”
+# Example output:
+# Enter your age: 15
+# You can watch PG-13 movies.
+
+age = int(input("Enter upur age: "))
+if age < 13:
+    print("You can watch PG or G movies.")
+elif age >= 13 and age <= 17:
+    print("You can watch PG-13 movies.")
+else:
+    print("You can watch any movie.")
+
+# Challenge 2: Leap Year
+# Ask for a year. It's a leap year if divisible by 4, EXCEPT century
+# years (divisible by 100), which must also be divisible by 400.
+# Example output:
+# Enter a year: 1900
+# 1900 is not a leap year.
+# (Test: 2024 -> leap, 1900 -> not, 2000 -> leap)
+          
+year = int(input("Enter a year: "))
+if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+    print(f"{year} is a leap year")
+else:
+    print(f"{year} is not a leap year")
