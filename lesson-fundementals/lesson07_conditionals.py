@@ -81,7 +81,7 @@ if day is not "Monday":
 # Enter your age: 15
 # You can watch PG-13 movies.
 
-age = int(input("Enter upur age: "))
+age = int(input("Enter your age: "))
 if age < 13:
     print("You can watch PG or G movies.")
 elif age >= 13 and age <= 17:
