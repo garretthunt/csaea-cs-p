@@ -69,6 +69,7 @@ shopping.append(item_one)
 shopping.append(item_two)
 shopping.append(item_three)
 insert = input("Enter new item: ")
+shopping.remove(item_two)
 shopping.insert(2, insert)
 print(shopping)
 
